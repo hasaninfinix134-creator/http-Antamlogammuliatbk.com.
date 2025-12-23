@@ -1,6 +1,15 @@
 // Inisialisasi saat halaman dimuat
 document.addEventListener("DOMContentLoaded", () => {
     renderCart();
+
+    // Tambahkan event listener tombol checkout di sini
+    const btnCheckout = document.getElementById('btnCheckout');
+    if (btnCheckout) {
+        btnCheckout.addEventListener('click', function() {
+            // Ganti 'payment.html' dengan halaman tujuan Anda
+            window.location.href = 'payment.html';
+        });
+    }
 });
 
 // Fungsi Render Keranjang
